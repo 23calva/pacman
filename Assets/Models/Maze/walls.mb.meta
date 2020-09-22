@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 89f771eb385985542b2bcbd513bb1fa9
+guid: 4c12200861e4edc47bacaa470d8456f1
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: placeholder_texture
+    second: {fileID: 2100000, guid: fed744a2b71528a4fbb4367db777451d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -36,7 +41,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
