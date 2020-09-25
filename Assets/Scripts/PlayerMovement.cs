@@ -30,13 +30,13 @@ public class PlayerMovement : MonoBehaviour
             transform.position += transform.right * movementSpeed * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            transform.Rotate(new Vector3(0f, -0.5f, 0f));
+            transform.Rotate(new Vector3(0, -90, 0));
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            transform.Rotate(new Vector3(0f, 0.5f, 0f));
+            transform.Rotate(new Vector3(0, 90, 0));
         }
     }
 }
