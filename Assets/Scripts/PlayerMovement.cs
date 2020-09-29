@@ -13,28 +13,21 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.position += transform.forward * movementSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position -= transform.forward * movementSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position -= transform.right * movementSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += transform.right * movementSpeed * Time.deltaTime;
-        }
+        transform.Translate(new Vector3(0, 0, movementSpeed));
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             transform.Rotate(new Vector3(0, -90, 0));
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            transform.Rotate(new Vector3(0, 90, 0));
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            transform.Rotate(new Vector3(0, -90, 0));
+        }
+        if (Input.GetKeyDown(KeyCode.D))
         {
             transform.Rotate(new Vector3(0, 90, 0));
         }
