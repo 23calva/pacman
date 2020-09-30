@@ -13,23 +13,23 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(new Vector3(0, 0, movementSpeed));
+        transform.position += Vector3.forward * Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
-            transform.Rotate(new Vector3(0, -90, 0));
+            transform.Translate(0, 0, Time.deltaTime);
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
-            transform.Rotate(new Vector3(0, 90, 0));
+            transform.Translate(0, 0, Time.deltaTime);
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(new Vector3(0, -90, 0));
+            transform.Translate(0, 0, Time.deltaTime);
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(new Vector3(0, 90, 0));
+            transform.Translate(0, 0, Time.deltaTime);
         }
     }
 }
