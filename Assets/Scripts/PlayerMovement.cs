@@ -8,28 +8,29 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-
+        
     }
 
     void Update()
     {
-        transform.position += Vector3.forward * Time.deltaTime;
-
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(0, 0, Time.deltaTime);
+           transform.Translate(0, 0, -movementSpeed);
         }
+
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(0, 0, Time.deltaTime);
+            transform.Translate(0, 0, movementSpeed);
         }
+
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(0, 0, Time.deltaTime);
+            transform.Translate(movementSpeed, 0, 0);
         }
+
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(0, 0, Time.deltaTime);
+            transform.Translate(-movementSpeed, 0, 0);
         }
     }
 }
