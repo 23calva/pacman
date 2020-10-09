@@ -7,11 +7,6 @@ public class Enemy : MonoBehaviour
 {
     public Transform goal;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
