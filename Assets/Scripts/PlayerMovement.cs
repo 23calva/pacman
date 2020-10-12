@@ -6,11 +6,6 @@ public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (Input.GetKey(KeyCode.W))

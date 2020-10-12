@@ -6,11 +6,6 @@ public class EnemySpawn : MonoBehaviour
 {
     public GameObject enemy;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         Instantiate(enemy, transform.position, transform.rotation);
