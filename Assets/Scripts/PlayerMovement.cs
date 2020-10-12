@@ -32,6 +32,5 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.Translate(-movementSpeed, 0, 0);
         }
-
     }
 }

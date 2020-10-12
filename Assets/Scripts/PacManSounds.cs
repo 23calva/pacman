@@ -12,22 +12,9 @@ public class PacManSounds : MonoBehaviour
         GetComponent<AudioSource>().clip = sndPacDeath;
     }
 
-    //void OnCollisionEnter ()
-    //{
-    //    if (other.gameObject.CompareTag("Pickup"))
-    //    {
-    //        other.gameObject.SetActive(false);
-    //    }
-    //    GetComponent<AudioSource>().Play();
-    //}
-
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter ()
     {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            GetComponent<AudioSource>().Play();
-            Debug.Log("Hit Enemy");
-        }
+        GetComponent<AudioSource>().Play();
     }
     void Update()
     {
