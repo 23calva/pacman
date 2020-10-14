@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: character_pacman
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: defaf18bc91d004438572aa278bff0bf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: defaf18bc91d004438572aa278bff0bf, type: 3}
 --- !u!1 &560537285 stripped
@@ -238,6 +243,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0.2
+--- !u!114 &560537289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560537285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e9019fa8a577e44baa1bdd32b46cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &560537290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: defaf18bc91d004438572aa278bff0bf,
@@ -256,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c5ac09d8dd3654d963fc9e490cf68b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sndPacDeath: {fileID: 8300000, guid: 8ba1bb41d5847ca47a49c92682210ae0, type: 3}
+  sndPacDeath: {fileID: 0}
 --- !u!82 &560537292
 AudioSource:
   m_ObjectHideFlags: 0
@@ -268,7 +285,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
