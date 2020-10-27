@@ -20557,6 +20557,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5893818267608029477, guid: 1f22f77d47b53944ab4022b2c4b3d220,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5893818267608029478, guid: 1f22f77d47b53944ab4022b2c4b3d220,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20616,6 +20621,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 5893818267608029498, guid: 1f22f77d47b53944ab4022b2c4b3d220,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f22f77d47b53944ab4022b2c4b3d220, type: 3}
